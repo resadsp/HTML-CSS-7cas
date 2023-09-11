@@ -1,0 +1,21 @@
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  } 
+  
+  .main {
+    text-align: center;
+  }
+
+  .note {
+    font-size: 120%;
+    color: red;
+  }
+
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }

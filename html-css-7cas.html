@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html-css-7cas.css">
     <title>HTML CSS 7. CAS</title>
 </head>
 <body>
+    <!-- block & inline -->
+
+    <!-- block elementi uvek pocinju u novom redu, a pretrazivac automatski dodaje margine pre i posle elementa.
+    element na nivou bloka uvek zauzima potpunu sirinu. najcesce korisceni blok elementi su:
+    p, div, h1...h6, ul, li, ol, dl, table, nav, form, main, pre...   -->
+    <h1 style="border: 1px solid black">Blok elelemenat h1 koji zauzima punu sirinu.</h1>
+    <p style="border: 1px solid green">Blok elelemenat p koji zauzima punu sirinu.</p>
+    <div style="border: 1px solid red">Blok elemenat div koji zauzima punu sirinu.</div>
+
+    <!-- inline element ne pocinju u novom redu. inline element zauzima samo onoliko sirine koliko je potrebno.
+    inline elementi su: a, b, br, input, button, em, img, select, map, label, object, q... -->
+    <p>Inline elemenat span <span style="border: 1px solid black">zauzima samo </span> onoliko prostora koliko je potrebno za elemenat.</p>
+    <p>Inline elemenat link<a href="#" style="border: 1px solid blue;">LINK</a>zauzima samo onoliko prostora koliko mu je potrebno.</p>
+
+    <!-- .klase -->
+    <!-- vise html elemenata moze da deli istu klasu.  -->
+    <h2 class="city main">Novi Pazar</h2> <!-- iskoristi sve iz klasa city i main -->
+    <h2 class="city">Cerkez Mahala</h2> <!-- iskoristi sve iz klase city -->
+    <h2 class="city">36300</h2>
+    <h1>Klasu <span class="note">mozemo pozvati</span> i u paragrafu, divu, naslovu, tabeli, listi...</h1>
+
+    <!-- #id -->
+    <!-- id je jedinstven. ne moze imati vise od jednog elementa sa istim id-om u html dokumentu. ostalo je sve kao kod klase.-->
+    <h1 id="myHeader">Novi Pazar</h1>
+
+    <!-- iframe -->
+    <!-- iframe se koristi za prikaz web stranice u okviru web stranice -->
+    <iframe src="file:///C:/Users/Maida/Desktop/Git_Hub/HTML-CSS-7cas/html-css-7cas.html" 
+    style="height:200px;width:400px" title="Iframe Example"></iframe>
     
+    <!-- ifreme sa linkovima. otvaranje prozora datog linka u iframe prozoru -->
+    <iframe src="https://www.w3schools.com/html/html_iframe.asp" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+    <p><a href="https://www.youtube.com/watch?v=eWVuBF1i1co" target="iframe_a">W3Schools.com</a></p>
+
+    <!-- JS -->
+    <!-- imacemo 30 casova rada sa JavaScriptom, ovo je samo uvod. 
+    JS cini HTML stranice dinamicnijim i interaktivnijim. HTML oznaka script se koristi za definisanje skripte na strani klijenta.
+    Script ili sadrzi naredbe ili ukazuje na eksternu datoteku skripte pomocu atributa src-->
+ 
+    <p id="demo">Pritiskom na dugme, tekst menja svoj celokupni stil.</p>
+    <button type="button" onclick="myFunction()">Promeni stil!</button>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").style.fontSize = "25px"; 
+          document.getElementById("demo").style.color = "red";
+          document.getElementById("demo").style.backgroundColor = "yellow";        
+        }
+        </script>
 </body>
 </html>
